@@ -7,7 +7,7 @@ export async function getAllNotes(_, res) {
     res.status(200).json(notes);
   } catch (error) {
     console.error("Error in getAllNotes controller", error);
-    res.satus(500).json({ message: "internal server error" });
+    res.status(500).json({ message: "internal server error" });
   }
 }
 
@@ -18,7 +18,7 @@ export async function getNoteById(req, res){
     res.json(note);
   } catch (error) {
     console.error("Error in getAllNotes controller", error);
-    res.satus(500).json({ message: "internal server error" });
+    res.status(500).json({ message: "internal server error" });
   }
 }
     
@@ -33,7 +33,7 @@ export async function createNote(req, res) {
     res.status(201).json(savedNote);
   } catch (error) {
     console.error("Error in createNote controller", error);
-    res.satus(500).json({ message: "internal server error" });
+    res.status(500).json({ message: "internal server error" });
   }
 
 }
